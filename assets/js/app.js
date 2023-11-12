@@ -38,7 +38,7 @@ Button.addEventListener("click", function () {
             } else {
               Img.src = 'assets/images/No.png';
               let ms;
-              if (number < Input.value) {
+              if (number > Input.value) {
                 ms = 'меньше моего числа';
               } else {
                 ms = 'больше моего числа';
