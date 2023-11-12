@@ -39,9 +39,9 @@ Button.addEventListener("click", function () {
               Img.src = 'assets/images/No.png';
               let ms;
               if (number > Input.value) {
-                ms = 'меньше моего числа';
+                ms = 'загаданное число больше';
               } else {
-                ms = 'больше моего числа';
+                ms = 'загаданное число меньше';
               }
               Result.textContent = `Ваш вариант ${Input.value} ${ms}`;
             }
