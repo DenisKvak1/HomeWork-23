@@ -30,11 +30,12 @@ Button.addEventListener("click", function () {
         else if (Input.value < min) {
             Input.value = min;
         }
-        if (iteration > currentIteration) {
+        if (iteration > currentIteration && Input.disabled==false) {
             if (Input.value == number) {
               Result.textContent = 'ПРАВИЛЬНО';
               Img.src = 'assets/images/yes.png';
               BtnClear.classList.remove('d-none');
+              Input.disabled=true;
             } else {
               Img.src = 'assets/images/No.png';
               let ms;
@@ -62,6 +63,7 @@ BtnClear.addEventListener("click", function () {
     number=getRandomNumber(min, max);
     iteration=iterationInitial;
     currentIteration=0;
+    Input.disabled=false;
     Input.value='';
     ipn=''
     Result.textContent = ``;
