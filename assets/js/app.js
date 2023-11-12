@@ -11,7 +11,7 @@ function getRandomNumber(min, max) {
   let GuessNumber = document.getElementById("GuessNumber");
 
 
-  let min=0;
+  let min=1;
   let max=100;
   let number = getRandomNumber(min, max);
   let iterationInitial = 10;
