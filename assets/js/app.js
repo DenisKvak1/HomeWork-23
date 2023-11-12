@@ -52,6 +52,7 @@ Button.addEventListener("click", function () {
             }
             LeftIteration.textContent=`Осталось попыток: ${iterationInitial-currentIteration}`
             ipn=Input.value;
+            Input.value=''
         }
     }
 });
