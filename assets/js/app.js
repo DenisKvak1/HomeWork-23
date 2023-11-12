@@ -20,8 +20,6 @@ function getRandomNumber(min, max) {
   GuessNumber.textContent=`Угадай число от ${min} до ${max}`;
 
   let ipn='';
-  console.log(number)
-
   let iteration=iterationInitial
 
 Button.addEventListener("click", function () {
@@ -67,5 +65,4 @@ BtnClear.addEventListener("click", function () {
     ipn=''
     Result.textContent = ``;
     LeftIteration.textContent=`Осталось попыток: ${iteration}`
-    console.log(number)
 });    
