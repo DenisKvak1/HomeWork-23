@@ -36,7 +36,7 @@ Button.addEventListener("click", function () {
               Img.src = 'assets/images/yes.png';
               BtnClear.classList.remove('d-none');
             } else {
-              Img.src = 'assets/images/no.png';
+              Img.src = 'assets/images/No.png';
               let ms;
               if (number < Input.value) {
                 ms = 'меньше моего числа';
@@ -57,7 +57,7 @@ Button.addEventListener("click", function () {
 });
 BtnClear.addEventListener("click", function () {
     BtnClear.classList.add('d-none');
-    Img.src = 'assets/images/what.png';
+    Img.src = 'assets/images/What.png';
     number=getRandomNumber(min, max);
     iteration=iterationInitial;
     currentIteration=0;
