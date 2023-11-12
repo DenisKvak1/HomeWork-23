@@ -39,11 +39,11 @@ Button.addEventListener("click", function () {
               Img.src = 'assets/images/No.png';
               let ms;
               if (number > Input.value) {
-                ms = 'загаданное число больше';
+                ms = 'Загаданное число больше';
               } else {
-                ms = 'загаданное число меньше';
+                ms = 'Загаданное число меньше';
               }
-              Result.textContent = `Ваш вариант ${Input.value} ${ms}`;
+              Result.textContent = `${ms}`;
             }
             currentIteration++;
             if (iteration <= currentIteration && Input.value != number) {
