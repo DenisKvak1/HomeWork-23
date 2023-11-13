@@ -50,6 +50,7 @@ Button.addEventListener("click", function () {
             if (iteration <= currentIteration && Input.value != number) {
               Result.textContent = `Попытки кончились, правильный ответ был: ${number}`;
               BtnClear.classList.remove('d-none');
+              Input.disabled=true;
             }
             LeftIteration.textContent=`Осталось попыток: ${iterationInitial-currentIteration}`
             ipn=Input.value;
